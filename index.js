@@ -4,7 +4,7 @@ export default {
   install(Vue, options) {
     const { host } = options
 
-    Vue.prototype.$req = {
+    Vue.prototype.$ver = {
       get: (method, params) => {
         if (typeof params  === 'object') {
           const { params, contentType = 'application/json; charset=utf-8' } = params
