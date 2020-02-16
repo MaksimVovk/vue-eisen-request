@@ -32,18 +32,22 @@ export default {
           const { params, contentType = 'application/json; charset=utf-8' } = query
 
           return axios({
-            method: 'get',
+            method: 'post',
             url: `${host}/${method}`,
-            data: params,
+            params: {
+              data: params,
+            },
             headers: { 'content-type': contentType },
           })
           .then(r => r.data)
         }
 
         const response = axios({
-          method: 'get',
+          method: 'post',
           url: `${host}/${method}`,
-          data: query,
+          params: {
+            data: query,
+          },
         })
         .then(r => r.data)
 
