@@ -8,14 +8,14 @@ Based on module [axios](https://www.npmjs.com/package/axios)
  - get request
  - post request
  - upload file (in development)
- 
- ## Use
- 
+
+## Use
+
  **main.js**
  ```
   import Vue from 'vue'
   import ver from 'vue-eisen-request'
-  
+
   import App from './App.vue'
 
   const host = 'http://localhost:3000'
