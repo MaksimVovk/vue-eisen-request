@@ -5,9 +5,9 @@ export default {
     const { host } = options
 
     Vue.prototype.$ver = {
-      get: (method, params) => {
-        if (typeof params  === 'object') {
-          const { params, contentType = 'application/json; charset=utf-8' } = params
+      get: (method, query) => {
+        if (typeof query  === 'object') {
+          const { params, contentType = 'application/json; charset=utf-8' } = query
 
           return axios({
             method: 'get',
@@ -21,15 +21,15 @@ export default {
         const response = axios({
           method: 'get',
           url: `${host}/${method}`,
-          params: params,
+          params: query,
         }).
         then(r => r.data)
 
         return response
       },
-      post: (method, params) => {
-        if (typeof params === 'object') {
-          const { params, contentType = 'application/json; charset=utf-8' } = params
+      post: (method, query) => {
+        if (typeof query === 'object') {
+          const { params, contentType = 'application/json; charset=utf-8' } = query
 
           return axios({
             method: 'get',
@@ -43,7 +43,7 @@ export default {
         const response = axios({
           method: 'get',
           url: `${host}/${method}`,
-          data: params,
+          data: query,
         })
         .then(r => r.data)
 
