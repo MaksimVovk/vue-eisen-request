@@ -1,0 +1,18 @@
+{
+  "name": "vue-eisen-request",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaksimVovk/vue-eisen-request.git"
+  },
+  "author": "m.vovk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MaksimVovk/vue-eisen-request/issues"
+  },
+  "homepage": "https://github.com/MaksimVovk/vue-eisen-request#readme",
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
